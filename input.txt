@@ -1,4 +1,4 @@
 This is a sample text file for testing Huffman coding compression.
 The algorithm works by analyzing character frequencies and assigning shorter codes to more frequent characters.
 This text contains various characters including spaces, punctuation, and repeated letters.
-Let's see how well it compresses this content!
+Let's see how it will compresses this content!

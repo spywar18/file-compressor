@@ -11,8 +11,7 @@ void displayMenu() {
 }
 
 void demoCompression() {
-    std::cout << "\n=== DEMO: HUFFMAN CODING ===" << std::endl;
-    
+    std::cout << "\n=== DEMO: HUFFMAN CODING ===" << std::endl;    
     std::string text = "hello world! this is a sample text for huffman compression.";
     std::cout << "Original text: \"" << text << "\"" << std::endl;
     std::cout << "Original length: " << text.length() << " characters" << std::endl;
@@ -42,15 +41,13 @@ void demoCompression() {
     } else {
         std::cout << "❌ ERROR: Decoded text doesn't match original!" << std::endl;
     }
-    
-    // Show compression stats
+    // Compression ratio
     double ratio = huffman.getCompressionRatio(text, encoded);
     std::cout << "\nCompression Statistics:" << std::endl;
     std::cout << "Original size: " << text.length() * 8 << " bits" << std::endl;
     std::cout << "Compressed size: " << encoded.length() << " bits" << std::endl;
     std::cout << "Compression ratio: " << ratio << "%" << std::endl;
 }
-
 void compressString() {
     std::cout << "\n=== STRING COMPRESSION ===" << std::endl;
     std::cout << "Enter text to compress: ";

@@ -40,6 +40,8 @@ private:
     void generateCodes(Node* node, std::string code);
     void deleteTree(Node* node);
     std::string decode(const std::string& encodedText, Node* root);
+ 
+    
     
 public:
     HuffmanCoding();
@@ -55,5 +57,7 @@ public:
     void decompressFile(const std::string& compressedFile, const std::string& outputFile);
     double getCompressionRatio(const std::string& original, const std::string& compressed);
 };
+
+
 
 #endif
